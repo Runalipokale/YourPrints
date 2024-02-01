@@ -1,0 +1,40 @@
+<%- include('../views/includes/head.ejs') %>
+<link rel="stylesheet" href="/CSS/product.css">
+</head>
+<body>
+  <%- include('../views/includes/header2.ejs') %>
+  <main class="product-page">
+    <div class="container-fluid">
+      <div class="row">
+      <% if (prods.length > 0) { %>
+            <% for (let product of prods) { %>
+              <div class="grid justify-content-center col-3">
+              <div class="products grid justify-content-space-between overflow-hidden ">             
+                <div class="product-card border justify-content-space-between py-2 px-3 mx-4 mt-5">
+                  <div class="product-card-body px-4 mx-3">
+                  <img class="d-flex justify-content-center" src="<%= product.imageUrl %>" alt="<%= product.title %>">
+                  <h6 class="product-name mt-5"><%= product.title %></h6>
+                  <h6 class="text-secondary"><%= product.description %></h6>
+                  <span class="price"><%= product.price %></span>
+                  <br>
+                  <button>Add to cart</button>
+                  <button>Wishlist</button>
+                  <!-- <button><a href="/product/<%= product.id %>">Details</a></button> -->
+                </div>
+              </div>
+            </div>
+            </div>
+            <% } %>
+            <% } else { %>
+              <h1 class="text-center my-1">No Products Found!</h1>
+              <% } %>
+            </div>
+          </div>
+      </main>
+      <hr>
+      <%- include('../views/includes/footer.ejs') %>
+</body>
+</html>
+
+
+

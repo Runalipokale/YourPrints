@@ -1,0 +1,66 @@
+<%- include('../views/includes/head.ejs') %>
+<link rel="stylesheet" href="/CSS/product.css">
+</head>
+<body>
+  <%- include('../views/includes/header2.ejs') %>
+  <main class="product-page">
+    <div class="container-fluid">
+      <div class="row">
+      <% if (prods.length > 0) { %>
+            <div class="sidebar border">
+              <div class="filter-body d-flex justify-content-between mt-5">
+                <h5 class="fw-bold">Filter</h5>
+                <button class="clear-all">Clear All</button>
+              </div>
+              <div class="sidebar-filter border bg-light p-4">
+                <div class="mt-2"><input type="radio" name="gender" id="" value="male"> Male</div>
+                <div class="mt-2"><input type="radio" name="gender" id="" value="female"> Female</div>
+                <br>
+                <hr>
+                <h5 class="fw-bold">Categories</h5>
+                <div class="mt-2"><input type="checkbox" name="t-shirts" id=""> T-shirts</div>
+                <div class="mt-2"><input type="checkbox" name="sweatshirts" id=""> Sweatshirts</div>
+                <div class="mt-2"><input type="checkbox" name="hoodies" id=""> Hoodies</div>
+                <div class="mt-2"><input type="checkbox" name="oversized" id=""> Oversized T-shirts</div>
+                <div class="mt-2"><input type="checkbox" name="croptop" id=""> Crop T-shirts</div>
+                <br>
+                <hr>
+                <h5 class="fw-bold">Price</h5>
+                <div class="mt-2"><input type="checkbox" name="price" id=""> Rs.100 to Rs.200</div>
+                <div class="mt-2"><input type="checkbox" name="price" id=""> Rs.201 to Rs.300</div>
+                <div class="mt-2"><input type="checkbox" name="price" id=""> Rs.301 to Rs.400</div>
+                <div class="mt-2"><input type="checkbox" name="price" id=""> Rs.401 to Rs.500</div>
+                <div class="mt-2"><input type="checkbox" name="price" id=""> Rs.501 to Rs.600</div>
+              </div>
+            </div>
+            <% for (let product of prods) { %>
+              <div class="grid justify-content-center col-3">
+              <div class="products grid justify-content-space-between overflow-hidden ">             
+                <div class="product-card border justify-content-space-between py-2 px-3 mx-4 mt-5">
+                  <div class="product-card-body px-4 mx-3">
+                  <img class="d-flex justify-content-center" src="<%= product.imageUrl %>" alt="<%= product.title %>">
+                  <h6 class="product-name mt-5"><%= product.title %></h6>
+                  <h6 class="text-secondary"><%= product.description %></h6>
+                  <span class="price"><%= product.price %></span>
+                  <br>
+                  <button>Add to cart</button>
+                  <button>Wishlist</button>
+                  <!-- <button><a href="/product/<%= product.id %>">Details</a></button> -->
+                </div>
+              </div>
+            </div>
+            </div>
+            <% } %>
+            <% } else { %>
+              <h1 class="text-center my-1">No Products Found!</h1>
+              <% } %>
+            </div>
+          </div>
+      </main>
+      <hr>
+      <%- include('../views/includes/footer.ejs') %>
+</body>
+</html>
+
+
+

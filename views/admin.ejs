@@ -1,0 +1,119 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" href="/CSS/admin.css">
+    <link rel="stylesheet" href="/CSS/adminMedia.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body class="body">
+      <div class="grid-container grid">
+      <%- include('./includes/adminHeader.ejs') %>
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+          <div class="sidebar-title d-flex justify-content-between align-items-center p-2">
+            <div class="sidebar-brand mt-1">
+              <span class="material-icons">dashboard</span> Admin Dashboard
+            </div>
+            <span class="material-icons" id="close" onclick="closeSidebar()">close</span>
+          </div>
+          <ul class="sidebar-list mt-1">
+            <li class="sidebar-list-item p-2">
+              <span class="material-icons">poll</span> <a href="#">Overall Analysis</a>
+            </li>
+            <li class="sidebar-list-item p-2">
+              <span class="material-icons">post_add</span> <a href="#">Add Product</a>
+            </li>
+            <li class="sidebar-list-item p-2">
+              <span class="material-icons">edit</span> <a href="#">Update Product</a>
+            </li>
+            <li class="sidebar-list-item p-2">
+                <span class="material-icons">inventory_2</span>
+                <form action="/products" method="get">
+                <a href="#!view-product">View Products</a>
+                </form>
+            </li>
+            <li class="sidebar-list-item p-2">
+              <span class="material-icons">add_shopping_cart</span> <a href="#!purchase">Purchase Orders</a>
+            </li>
+            <li class="sidebar-list-item p-2">
+              <span class="material-icons">shopping_cart</span> <a href="#!sales">Sales Orders</a>
+            </li>
+          </ul>
+        </aside>
+        <!-- End-sidebar -->
+
+        <!-- Main -->
+        <main class="main-container p-2">
+          <div class="main-title d-flex justify-content-between">
+            <p class="font-weight-bold">Dashboard</p>
+          </div>
+          <div class="main-cards grid">
+        
+            <div class="card flex">
+              <div class="card-inner d-flex justify-content-between align-items-center">
+                <p class="">Products</p>
+                <span class="material-icons">inventory_2</span>
+              </div>
+              <span class="font-weight-bold">249</span>
+            </div>
+        
+            <div class="card flex">
+              <div class="card-inner d-flex justify-content-between align-items-center">
+                <p class="">Purchase Orders</p>
+                <span class="material-icons">add_shopping_cart</span>
+              </div>
+              <span class="font-weight-bold">83</span>
+            </div>
+        
+            <div class="card flex">
+              <div class="card-inner d-flex justify-content-between align-items-center">
+                <p class="">Sales Orders</p>
+                <span class="material-icons">shopping_cart</span>
+              </div>
+              <span class="font-weight-bold">79</span>
+            </div>
+        
+          </div>
+          <div class="charts grid">
+        
+            <div class="charts-card">
+              <p class="charts-title d-flex justify-content-center align-items-center">Top 5 Products</p>
+              <div id="bar-chart"></div>
+            </div>
+            <div class="charts-card">
+              <p class="charts-title d-flex justify-content-center align-items-center">Purchase and Sales Orders</p>
+              <div id="area-chart"></div>
+            </div>
+        
+          </div>
+          <!-- <div ng-view></div> -->
+        </main>
+        <!-- End-main -->
+      </div> 
+      
+
+      <!-- <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider) {
+            $routeProvider
+            .when("/", {
+                templateUrl : "analysis.html"
+            })
+            .when("/add-product", {
+                templateUrl : "add-product.html"
+            })
+            .when("/green", {
+                templateUrl : "green.htm"
+            })
+            .when("/blue", {
+                templateUrl : "blue.htm"
+            });
+        });
+      </script> -->
+
+      
+<!-- Custom Js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+<script src="/JS/index.js"></script>
+
+</body>
+</html>
