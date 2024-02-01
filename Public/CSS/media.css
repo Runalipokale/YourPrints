@@ -1,0 +1,416 @@
+  @media screen and (max-width: 399px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .bannerImg{
+        height: 0;
+        width: 0;
+    }
+    .div1{
+        height: 10vh;
+        width: 10vh;
+        right: 30%;
+        top: 20%;
+    }
+    .div2{
+        right: -1%;
+        top: -1%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .div3{
+        left: -10%;
+        top: 30%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .hero-sec{
+        height: 25vh;
+    }
+    .sec-2{
+        height: 25vh;
+    }
+    .card-prev{
+        top: 55%;
+        left: 10%;
+    }
+    .card-next{
+        top: 55%;
+        right: 10%;
+    }
+    .sec-3{
+        margin-top: 10px;
+        height: 32vh;
+    }
+    .cat-prev{
+        top: 87%;
+        left: 10%;
+    }
+    .cat-next{
+        top: 87%;
+        right: 10%;
+    }
+    .branding-sec{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .sec-4{
+        height: 40vh;
+    }
+    .branding-img img{
+        height: 15vh;
+        width: 15vh;
+        margin-left: -20%;
+    }
+    .branding-text h2{
+        font-size: 1rem;
+    }
+    .branding-text h5{
+        font-size: 0.8rem;
+    }
+    .div4{
+        height: 20vh;
+        width: 20vh;
+        top: 110%;
+    }
+  }
+  @media screen and (min-width: 400px) and (max-width: 767px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .bannerImg{
+        height: 0;
+        width: 0;
+    }
+    .div1{
+        height: 10vh;
+        width: 10vh;
+        right: 30%;
+        top: 20%;
+    }
+    .div2{
+        right: -1%;
+        top: -1%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .div3{
+        left: -10%;
+        top: 30%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .hero-sec{
+        height: 25vh;
+    }
+    .sec-2{
+        height: 25vh;
+    }
+    .card-prev{
+        top: 55%;
+        left: 10%;
+    }
+    .card-next{
+        top: 55%;
+        right: 10%;
+    }
+    .sec-3{
+        margin-top: 10px;
+        height: 32vh;
+    }
+    .cat-prev{
+        top: 87%;
+        left: 10%;
+    }
+    .cat-next{
+        top: 87%;
+        right: 10%;
+    }
+    .sec-4{
+        height: 40vh;
+    }
+    .branding-sec{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .branding-img img{
+        height: 20vh;
+        width: 20vh;
+        margin-left: -20%;
+    }
+    .branding-text h2{
+        font-size: 1.2rem;
+    }
+    .branding-text h5{
+        font-size: 0.8rem;
+    }
+    .div4{
+        height: 20vh;
+        width: 20vh;
+        top: 110%;
+        left: 15%;
+    }
+    footer{
+        height: 5vh;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    .bannerImg{
+        right: 30%;
+        top: 10%;
+        height: 45vh;
+        width: 45vw;
+    }
+    .hero-sec{
+        height: 25vh;
+    }
+    .left-banner{
+        margin-top: 5%;
+    }
+    .left-banner h1{
+        font-weight: 900;
+        font-size: 3.5rem;
+    }
+    .div1{
+        height: 10vh;
+        width: 10vh;
+        right: 30%;
+        top: 20%;
+    }
+    .div2{
+        right: -1%;
+        top: -1%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .div3{
+        left: -10%;
+        top: 30%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .sec-2{
+        height: 25vh;
+    }
+    .card-prev{
+        top: 55%;
+        left: 5%;
+    }
+    .card-next{
+        top: 55%;
+        right: 5%;
+    }
+    .sec-3{
+        margin-top: 10px;
+        height: 32vh;
+    }
+    .cat-prev{
+        top: 87%;
+        left: 5%;
+    }
+    .cat-next{
+        top: 87%;
+        right: 5%;
+    }
+    .sec-4{
+        height: 20vh;
+    }
+    .branding-img img{
+        height: 20vh;
+        width: 20vh;
+        margin-left: -15%;
+    }
+    .branding-text h2{
+        font-size: 1.5rem;
+    }
+    .branding-text h5{
+        font-size: 1rem;
+    }
+    .div4{
+        height: 20vh;
+        width: 20vh;
+        top: 110%;
+    }
+    footer{
+        height: 5vh;
+    }
+  }
+
+  @media screen and (min-width: 993px) and (max-width: 1200px){
+    .bannerImg{
+        right: 30%;
+        top: 5%;
+        height: 35vh;
+        width: 35vw;
+    }
+    .hero-sec{
+        height: 40vh;
+    }
+    .left-banner{
+        margin-top: 10%;
+    }
+    .left-banner h1{
+        font-weight: 900;
+        font-size: 3.5rem;
+    }
+    .div1{
+        height: 10vh;
+        width: 10vh;
+        right: 25%;
+        top: 20%;
+    }
+    .div2{
+        right: -1%;
+        top: -1%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .div3{
+        left: -10%;
+        top: 25%;
+        height: 30vh;
+        width: 30vh;
+    }
+    .sec-2{
+        height: 25vh;
+    }
+    .card-prev{
+        top: 60%;
+        left: 5%;
+    }
+    .card-next{
+        top: 60%;
+        right: 5%;
+    }
+    .sec-3{
+        margin-top: 10px;
+        height: 32vh;
+    }
+    .cat-prev{
+        top: 90%;
+        left: 5%;
+    }
+    .cat-next{
+        top: 90%;
+        right: 5%;
+    }
+    .sec-4{
+        height: 40vh;
+    }
+    .branding-img img{
+        height: 20vh;
+        display: flex;
+        width: 20vh;
+        margin-left: -1%;
+        justify-content: center;
+        align-items: center;
+    }
+    .branding-text h2{
+        font-size: 1.5rem;
+    }
+    .branding-text h5{
+        font-size: 1rem;
+    }
+    .div4{
+        height: 20vh;
+        width: 20vh;
+        top: 115%;
+    }
+    footer{
+        height: 5vh;
+    }
+  }
+
+  @media screen and (min-width: 1201px) and (max-width: 1400px){
+    .bannerImg{
+        right: 30%;
+        top: 5%;
+        height: 35vh;
+        width: 35vw;
+    }
+    .hero-sec{
+        height: 60vh;
+    }
+    .left-banner{
+        margin-top: 10%;
+    }
+    .left-banner h1{
+        font-weight: 900;
+        font-size: 3.5rem;
+    }
+    .div1{
+        height: 10vh;
+        width: 10vh;
+        right: 25%;
+        top: 20%;
+    }
+    .div2{
+        right: -1%;
+        top: -1%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .div3{
+        left: -10%;
+        top: 25%;
+        height: 30vh;
+        width: 30vh;
+    }
+    .sec-2{
+        height: 25vh;
+    }
+    .card-prev{
+        top: 55%;
+        left: 5%;
+    }
+    .card-next{
+        top: 55%;
+        right: 5%;
+    }
+    .sec-3{
+        margin-top: 10px;
+        height: 32vh;
+    }
+    .cat-prev{
+        top: 90%;
+        left: 5%;
+    }
+    .cat-next{
+        top: 90%;
+        right: 5%;
+    }
+    .sec-4{
+        height: 40vh;
+    }
+    .branding-img img{
+        height: 20vh;
+        display: flex;
+        width: 20vh;
+        margin-left: -1%;
+        justify-content: center;
+        align-items: center;
+    }
+    .branding-text h2{
+        font-size: 1.5rem;
+    }
+    .branding-text h5{
+        font-size: 1rem;
+    }
+    .div4{
+        height: 20vh;
+        width: 20vh;
+        top: 115%;
+    }
+    footer{
+        height: 5vh;
+    }
+  }
